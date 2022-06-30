@@ -2,8 +2,8 @@ function importIframe() {
     var ficha = document.getElementById("ficha").value;
 
     var link = `http://200.188.14.49/p/jsp/covid/encuesta_covid_alumnoz.jsp?mensaje=AMIGAZO&clave_usuario=${ficha}`;
-
-    document.write(`<iframe src=\"${link}\" width=\"100%\" height=\"100%\" frameborder=\"0\" id=\"iFrame\"> dos </iframe>`);
+    window.location.href = link;
+    //document.write(`<iframe src=\"${link}\" width=\"100%\" height=\"100%\" frameborder=\"0\" id=\"iFrame\"> dos </iframe>`);
     //document.write("<button class=\"btn btn-lg btn-primary w-100\" onclick=\"llenarFormMañanaNoCovid();\">Llenar Formulario Para Mañana</button>");
 }
 
